@@ -55,4 +55,50 @@ print type(soup.a.string)
 
 print soup.p.contents
 
+print soup.head.string
+#The Dormouse's story
+print soup.title.string
+#The Dormouse's story
+print soup.html.string
+
+p = soup.p
+print p.parent.name
+
+
+print soup.p.next_sibling
+#       实际该处为空白
+print soup.p.prev_sibling
+#None   没有前一个兄弟节点，返回 None
+print soup.p.next_sibling.next_sibling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
